@@ -63,6 +63,14 @@ document.getElementById("search").addEventListener("click", () => {
     document.body.style.background = "red"
     window.alert("u are gay")
     return
+    if (searchValue == "amogus") {
+    document.body.style.background = "red"
+    window.alert("Red was the impostor.")
+    return
+    if (searchValue == "rickroll") {
+    document.body.style.background = "black"
+    window.alert("No. Just no.")
+    return
   } else if (!Object.keys(meanings).includes(searchValue)) {
     return
   } else {
