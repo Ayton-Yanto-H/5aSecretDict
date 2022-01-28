@@ -63,7 +63,15 @@ document.getElementById("search").addEventListener("click", () => {
     document.body.style.background = "red"
     window.alert("u are gay")
     return
-  } else if (!Object.keys(meanings).includes(searchValue)) {
+  if (searchValue == "amogus") {
+    document.body.style.background = "red"
+    window.alert("Red was the Impostor")
+    return
+  if (searchValue == "rickroll") {
+    document.body.style.background = "black"
+    window.alert("No. Just no.")
+    return
+    } else if (!Object.keys(meanings).includes(searchValue)) {
     return
   } else {
     let realButton
@@ -98,6 +106,6 @@ b.addEventListener("click", () => {
     document.body.style.visibility = "visible"
     main()
   } else {
-    window.alert("You entered the wrong password. Try again.")
+    window.alert("You are an impostor. Try again.")
   }
 })
