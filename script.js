@@ -60,18 +60,18 @@ document.getElementById("search").addEventListener("click", () => {
   let searchValue = search.value.toLowerCase().replace(" ", "")
   console.log("searchValue: %s", searchValue)
   if (searchValue == "gay") {
-    document.body.style.background = "red"
+    document.body.style.background = "purple"
     window.alert("u are gay")
     return
-  if (searchValue == "amogus") {
+  } else if (searchValue == "amogus") {
     document.body.style.background = "red"
     window.alert("Red was the Impostor")
     return
-  if (searchValue == "rickroll") {
+  } else if (searchValue == "rickroll") {
     document.body.style.background = "black"
     window.alert("No. Just no.")
     return
-    } else if (!Object.keys(meanings).includes(searchValue)) {
+  } else if (!Object.keys(meanings).includes(searchValue)) {
     return
   } else {
     let realButton
